@@ -63,6 +63,7 @@ public class UnPacker {
             while ((len = inputStream.read(buffer)) > 0) {
                 fos.write(buffer, 0, len);
             }
+
             fos.close();
         }
     }
