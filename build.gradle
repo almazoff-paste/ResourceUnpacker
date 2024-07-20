@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group = 'pw.whiterose.unpacker'
+version = '1.0.0'
+
+compileJava.options.encoding = 'UTF-8'
+
+compileJava.sourceCompatibility = JavaVersion.VERSION_1_8
+compileJava.targetCompatibility = JavaVersion.VERSION_1_8
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'pw.whiterose.unpacker.UnPacker'
+    }
+}
