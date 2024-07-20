@@ -18,15 +18,20 @@ public class UnPacker {
             Platform.runLater(() -> {
                 FileChooser d = new FileChooser();
                 File file = d.showOpenDialog(null);
+
                 if (file == null) {
                     System.exit(0);
                     return;
                 }
+
                 unpackWithException(file.getPath());
             });
+
             return;
         }
+
         String path = args[0];
+
         unpackWithException(path);
     }
 
